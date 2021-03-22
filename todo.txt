@@ -1,0 +1,5 @@
+A personal diary app
+    Add entries with a date and text
+    Show more recent first
+    Attach pictures
+    Store them somewhere
