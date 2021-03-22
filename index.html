@@ -10,19 +10,41 @@
 </head>
 <body>
 
-    <header>
-        <h1>Personal Diary</h1>
+    <header id="mainHeader">
+        <div class="header-logo">
+            <a href="/">
+                <img src="/" alt="logo" height="70">
+            </a>
+        </div>
+        <div>
+            <nav>
+                <ul class="utilityNav">
+                    <ul>
+                        <li>
+                            <a href="/">Profile</a>
+                        </li>
+                        <li>
+                            <a href="/">New post</a>
+                        </li>
+                        <li>
+                            <a href="/">Seting</a>
+                        </li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+        <div class="search">
+            <form action="/search/results" method="POST">
+                <input type="search" placeholder="Search"> 
+                <button type="submit" >submit</button>
+            </form>
+        </div>
     </header>
-
-    <section>
-        <nav>
-        </nav>
-        
-        <form>
-            <textarea>
-                What are you thinking?
-            </textarea><br>
-            <input type="button" value="Send" onclick="onSubmit()">
+    <br>
+    <section> 
+        <form onsubmit="submitFunction()">
+            <textarea placeholder="What are you thinking?"></textarea><br>
+            <input type="submit">
         </form>
     </section>
     
