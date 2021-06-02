@@ -10,45 +10,18 @@
 </head>
 <body>
 
-    <header id="mainHeader">
-        <div class="header-logo">
-            <a href="/">
-                <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="logo" height="70">
-            </a>
-        </div>
-        <div>
-            <nav>
-                <ul class="utilityNav">
-                    <ul>
-                        <li>
-                            <a href="/">Profile</a>
-                        </li>
-                        <li>
-                            <a href="/">New post</a>
-                        </li>
-                        <li>
-                            <a href="/">Settings</a>
-                        </li>
-                    </ul>
-                </ul>
-                <div class="search">
-                    <form action="/search/results" method="POST">
-                        <input type="search" placeholder="Search"> 
-                        <button type="submit" >submit</button>
-                    </form>
-                </div>
-            </nav>
-        </div>
-    </header><br> <!-- احذفي البريك بعد ماتخلصين ستايل -->
+    <header >
+    </header>
      
     <section> 
-        <form onsubmit="submitFunction()">
-            <textarea placeholder="What are you thinking?"></textarea><br>
-            <input type="submit">
+        <p id="root"></p>
+       
+        <form id="my-form"  action="#" onsubmit="submitFunction();return false">
+            <textarea type="text" id="uniqueID" value="value" placeholder="What are you thinking?"></textarea><br>
+            <input type="submit"/>
         </form>
     </section>
     
-    <script src="./JS/index.js"></script> 
-
+    <script src="./JS/main.js"></script> 
 </body>
 </html>
