@@ -5,7 +5,7 @@ body{
 }
 #root p{
     width: 300px;
-    height: 100px;
+    height: auto;
     overflow-wrap: break-word;
     padding: 50px;
     border: 1px solid black;
