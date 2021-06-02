@@ -7,12 +7,13 @@ function submitFunction(){
     
     for(let i = 0; i < form.elements.length; i++){
        let e = form.elements[i];
-       posts.push(e.value);
-       console.log(e.value);
-
-       var btn = document.createElement("p");   
-       btn.innerHTML = e.value;                   
-       document.getElementById("root").appendChild(btn); 
+        if(e.value != ""){
+            posts.push(e.value);
+            console.log(e.value);
+            var btn = document.createElement("p");   
+            btn.innerHTML = e.value;                   
+            document.getElementById("root").appendChild(btn); 
+        }
     }
      console.log(posts);
     
