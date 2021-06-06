@@ -1,14 +1,15 @@
 body{
-    box-sizing: border-box;
     text-align: center;
     background-color: GhostWhite;
 }
+
 #root p{
+    white-space: pre-wrap;
+    margin-left: auto;
+    margin-right: auto;
     width: 300px;
     height: auto;
     overflow-wrap: break-word;
     padding: 50px;
-    border: 1px solid black;
-   
-
+    border: 2px solid black;
 }
