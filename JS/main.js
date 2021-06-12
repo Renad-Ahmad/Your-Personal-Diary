@@ -10,16 +10,22 @@ function add(){
             let div = document.createElement("div");
             let paragraph = document.createElement("p");
             let remove = document.createElement("INPUT");
+            let edit = document.createElement("INPUT");
 
             paragraph.innerHTML = e.value + "\n" + date ;                 
             div.appendChild(paragraph);
 
             remove.setAttribute("type", "button");
-            remove.setAttribute("value","DELETE")
-            remove.setAttribute("onclick","remove(this)")
+            remove.setAttribute("value","DELETE");
+            remove.setAttribute("onclick","removeElement(this)");
             div.appendChild(remove); 
-            allPosts[i].appendChild(div);
 
+            edit.setAttribute("type", "button");
+            edit.setAttribute("value","EDIT");
+            edit.setAttribute("onclick","editElement(this)");
+            div.appendChild(edit); 
+
+            allPosts[i].appendChild(div);
         }
     }
 }
@@ -33,17 +39,20 @@ function add(){
 //     return new_array;
 //   }
 
-function remove(element){
+function removeElement(element){
     element.parentElement.parentElement
     .removeChild(element.parentElement);
-
 }
 
-// function edit(){
-//     posts.map((item, index) => {
-//         let test = posts.splice(index, 1,item);
-//         return test;
-//     })
-// }
+function editElement(element){
+    element.value = "DONE" ;
+    element.setAttribute("onclick","doneEdit(this)");
+    element.parentElement.firstChild.contentEditable = true;
+}
 
+function doneEdit(element){
+    element.parentElement.firstChild.contentEditable = false;
+    element.value = "EDIT" ;
+    element.setAttribute("onclick","editElement(this)");
+}
 
