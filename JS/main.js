@@ -1,19 +1,23 @@
 const form = document.getElementById("my-form"); 
 const allPosts = document.getElementsByClassName("all-posts");
-const date = Date().slice(0,21);
+// const date = Date().slice(0,21);
 
 function add(){
+  const date = Date().slice(0,21);
     for(let i = 0; i < form.elements.length; i++){
        let e = form.elements[i];
+       
         if(e.value != ""){
-
             let div = document.createElement("div");
             let paragraph = document.createElement("p");
+            let time = document.createElement("small");
             let remove = document.createElement("INPUT");
             let edit = document.createElement("INPUT");
 
-            paragraph.innerHTML = e.value + "\n" + date ;                 
+            paragraph.innerHTML = e.value; 
+            time.innerHTML = date + "\n";               
             div.appendChild(paragraph);
+            div.appendChild(time); 
 
             remove.setAttribute("type", "button");
             remove.setAttribute("value","DELETE");
@@ -30,14 +34,9 @@ function add(){
     }
 }
 
-// function moveLastArrayElementToFirstIndex(this_array) {
-//     let new_array = new Array();
-//     new_array[0] = this_array[this_array.length - 1];     
-//     for (i = 1; i < this_array.length; i++) { 
-//       new_array[i] = this_array[i - 1];
-//     }
-//     return new_array;
-//   }
+function moveLastArrayElementToFirstIndex() {
+  }
+
 
 function removeElement(element){
     element.parentElement.parentElement
@@ -56,3 +55,14 @@ function doneEdit(element){
     element.setAttribute("onclick","editElement(this)");
 }
 
+// function showPreviewOne(event){
+//     if(event.target.files.length > 0){
+//       let src = URL.createObjectURL(event.target.files[0]);
+//       let preview = document.getElementById("file-ip-1-preview");
+//       preview.src = src;
+//       preview.style.display = "block";
+//     } 
+//   }
+//   function myImgRemoveFunctionOne() {
+//     document.getElementById("file-ip-1-preview").src = "https://i.ibb.co/ZVFsg37/default.png";
+//   }
