@@ -1,9 +1,9 @@
 const form = document.getElementById("my-form"); 
 const allPosts = document.getElementsByClassName("all-posts");
-// const date = Date().slice(0,21);
 
 function add(){
   const date = Date().slice(0,21);
+  
     for(let i = 0; i < form.elements.length; i++){
        let e = form.elements[i];
        

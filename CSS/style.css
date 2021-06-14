@@ -1,15 +1,42 @@
 body{
     text-align: center;
-    background-color: GhostWhite;
+    background-color: #DADED4;
+    border: 3px solid #FFFFFF ;
 }
 
+h1{
+    color: #164A41;
+    font-family: "Courier New";
+    font-size: 50px; 
+    line-height: 160px;
+    font-weight: normal;
+    margin-bottom: 0px; 
+    margin-top: 0px; text-align: center;
+    text-shadow: 0 1px 1px #fff;
+}
 .header {
     background-color: white;
-    padding: 20px;
-    text-align: center;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 3px;
   }
 
-  .all-posts p{
+textarea{
+    background-color: #DADED4;
+}
+
+p { 
+    color: #7a7c7f;
+    font-size: 25px; 
+    font-family: "Libre Baskerville", serif; 
+    line-height: 45px; 
+    text-align: left; 
+    text-shadow: 0 1px 1px #fff; 
+    padding-top: 20px; 
+}
+
+.all-posts p{
     margin-left: auto;
     margin-right: auto;
     width: 300px;
@@ -19,10 +46,17 @@ body{
     border: 2px solid black;
 }
 
+.center{
+    padding-top: 100px;
+    height: 400px;
+    background-color: #DADED4;
+    overflow: auto;
+}
+
 input[type=button], input[type=submit]{
-    border: 1px solid black;
+    border: 1px solid #3C403D;
     background-color: white;
-    color: black;
+    color: #3C403D;
     font-size: 14px;
     width: 10%;
     font-weight: bold;
@@ -41,12 +75,22 @@ input[type=button]:hover, input[type=submit]:hover {
     opacity: 1
 }
 
+
 small{
     white-space: pre;
+    font-family: "Libre Baskerville", serif;
+    color: #a5aaa7;
 }
 
 .footer {
+    color: #164A41;
+    font-family: "Courier New";
     background-color: white;
-    padding: 40px;
-    text-align: center;
-  }
+    height: 20px;
+    bottom: 10px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+    text-align: left;
+}
