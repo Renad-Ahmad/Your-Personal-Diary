@@ -1,6 +1,6 @@
 # Your Personal Diary
 ## Descriprtion
-This is an online diary service,  Write the story of your life. Keeping a diary online makes it easy to keep a record of your life.
+This is an online diary service,where you can write about your day,  your feelings, random thoughts and ideas and more... 
 
 ### Deployed Website Link
 https://renad-ahmad.github.io/Your-Personal-Diary/
